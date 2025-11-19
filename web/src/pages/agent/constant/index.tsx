@@ -110,7 +110,7 @@ export const initialRetrievalValues = {
 
 export const initialBeginValues = {
   mode: AgentDialogueMode.Conversational,
-  prologue: `Hi! I'm your assistant. What can I do for you?`,
+  prologue: `Что вам подсказать?`,
 };
 
 export const initialRewriteQuestionValues = {
