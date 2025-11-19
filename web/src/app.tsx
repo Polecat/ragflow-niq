@@ -58,13 +58,12 @@ function Root({ children }: React.PropsWithChildren) {
   const { theme: themeragflow } = useTheme();
   const getLocale = (lng: string) =>
     AntLanguageMap[lng as keyof typeof AntLanguageMap] ?? enUS;
-
   const [locale, setLocal] = useState<Locale>(getLocale(storage.getLanguage()));
-
-  i18n.on('languageChanged', function (lng: string) {
-    storage.setLanguage(lng);
-    setLocal(getLocale(lng));
-  });
+  // i18n.on('languageChanged', function (lng: string) {
+  //   console.log("lang CHNAGES", lng)
+  //   storage.setLanguage(lng);
+  //   setLocal(getLocale(lng));
+  // });
 
   return (
     <>
@@ -93,11 +92,7 @@ function Root({ children }: React.PropsWithChildren) {
 
 const RootProvider = ({ children }: React.PropsWithChildren) => {
   useEffect(() => {
-    // Because the language is saved in the backend, a token is required to obtain the api. However, the login page cannot obtain the language through the getUserInfo api, so the language needs to be saved in localstorage.
-    const lng = storage.getLanguage();
-    if (lng) {
-      i18n.changeLanguage(lng);
-    }
+    i18n.changeLanguage('ru');
   }, []);
 
   return (
