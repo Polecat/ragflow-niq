@@ -486,7 +486,7 @@ export default {
       emptyResponseTip: `Ответ, если в базах знаний не найдено релевантной информации.`,
       emptyResponseMessage: `Срабатывает, если ничего не найдено. Очистите поле, если не выбраны базы знаний.`,
       setAnOpener: 'Приветственное сообщение',
-      setAnOpenerInitial: `Привет! Я ваш ассистент, чем могу помочь?`,
+      setAnOpenerInitial: 'Что вам подсказать?',
       setAnOpenerTip: 'Установите приветствие для пользователей.',
       knowledgeBases: 'Базы знаний',
       knowledgeBasesMessage: 'Выберите',
