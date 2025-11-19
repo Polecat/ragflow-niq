@@ -110,6 +110,7 @@ export function Sessions({
           onClick={switchSettingVisible}
           disabled={!hasSingleChatBox}
           variant={'outline'}
+          style={{ visibility: 'hidden' }}
         >
           {t('chat.chatSetting')}
         </Button>

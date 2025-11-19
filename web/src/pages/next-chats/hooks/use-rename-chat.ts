@@ -21,7 +21,7 @@ export const useRenameChat = () => {
     () => ({
       name: '',
       icon: '',
-      language: 'English',
+      language: 'Russian',
       description: '',
       prompt_config: {
         empty_response: '',
