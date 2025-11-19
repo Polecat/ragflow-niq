@@ -57,8 +57,10 @@ export default {
       },
     },
     login: {
+      loginTitle: 'Войти',
+      signUpTitle: 'Регистрация',
       login: 'Войти',
-      signUp: 'Регистрация',
+      signUp: 'Зарегистрироваться',
       loginDescription: 'Рады снова видеть вас!',
       registerDescription: 'Рады приветствовать вас на борту!',
       emailLabel: 'Email',
@@ -72,7 +74,7 @@ export default {
       nicknamePlaceholder: 'Введите никнейм',
       register: 'Создать аккаунт',
       continue: 'Продолжить',
-      title: 'Начните создавать умных помощников.',
+      title: 'Нильсен Агент',
       description:
         'Зарегистрируйтесь бесплатно, чтобы изучить передовые RAG-технологии. Создавайте базы знаний и ИИ для развития вашего бизнеса.',
       review: 'на основе 500+ отзывов',
